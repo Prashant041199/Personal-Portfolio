@@ -96,10 +96,6 @@ body {
   color: #ffffff;
 }
 
-.main {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
 .main .row {
   margin: 3% 0;
   justify-content: space-around;
@@ -119,14 +115,15 @@ body {
 }
 .main .row .box-border .row .left-side .row .details-wrapper p {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .main .row .box-border .row .left-side .row .details-wrapper .detail-title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 17px;
   color: #1d3557;
 }
 .main .row .box-border .row .left-side .row h5 {
-  font-weight: 400;
+  font-weight: 600;
 }
 .main .row .box-border .row .left-side .row .skills {
   margin-top: 1%;
@@ -146,7 +143,7 @@ body {
 }
 .main .row .box-border .row .right-side h1 {
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
 }
 .main .row .box-border .row .right-side h1::after {
   content: "";
@@ -164,9 +161,6 @@ body {
   margin-top: 4%;
   text-align: center;
   position: relative;
-}
-.center-header h1 {
-  font-weight: 300;
 }
 .center-header p::after {
   content: "";
@@ -205,8 +199,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 60px;
   background-color: #1d3557;
 }
@@ -229,11 +223,7 @@ body {
   transition: 0.5s;
 }
 .service-box .service-text, .portfolio-box .service-text {
-  font-weight: 300;
   text-align: center;
-}
-.service-box .service-text h4, .portfolio-box .service-text h4 {
-  font-weight: 400;
 }
 
 .portfolio-box {
@@ -247,114 +237,12 @@ body {
   background-image: url(Images/Interior-design.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 .portfolio-box .portfolio-text {
   margin: 1rem 0 1rem 0;
 }
-.portfolio-box .portfolio-text h4 {
-  font-weight: 300;
-}
 .portfolio-box .portfolio-icon-2 {
   background-image: url(Images/portfolio.png);
-}
-
-.row.contact-form-wrapper {
-  display: flex;
-  justify-content: space-around;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(Images/background1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 0;
-}
-.row.contact-form-wrapper .col-sm-12 .container {
-  box-shadow: 0 0 16px #e63946, 0 0 16px #e63946;
-  background-color: white;
-  border: none;
-  border-radius: 4px;
-}
-
-.left-side-contact, .right-side-contact {
-  display: flex;
-}
-.left-side-contact .col-md-11, .right-side-contact .col-md-11 {
-  padding: 4%;
-}
-
-.heading-wrapper {
-  margin: 4% 0;
-}
-.heading-wrapper h3 {
-  position: relative;
-  font-weight: 300;
-}
-.heading-wrapper h3::after {
-  content: "";
-  width: 12%;
-  height: 3px;
-  border-radius: 2px;
-  position: absolute;
-  transform: translate(10%);
-  left: 0;
-  bottom: 0;
-  background-color: #e63946;
-}
-
-.form-wrapper {
-  margin: 1% 0 5%;
-}
-
-.form-flex {
-  display: flex;
-  flex-direction: column;
-}
-.form-flex input, .form-flex textarea {
-  font-weight: 300;
-  border-radius: 3px;
-  border: none;
-  box-shadow: 0 0 2px rgba(137, 137, 137, 0.6), 0 0 5px rgba(137, 137, 137, 0.6);
-  margin: 2% 0;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-}
-.form-flex .submit-button {
-  padding: 12px 10px;
-  border: none;
-  background-color: #e63946;
-  border-radius: 25px;
-  color: white;
-  width: 70%;
-}
-
-.right-side-contact .col-md-12 .form-wrapper .content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .address-details li span {
-  margin-right: 10px;
-  font-size: 1.1rem;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links {
-  margin-top: 3%;
-  display: flex;
-  flex-direction: row;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links li {
-  margin: 0 4% 0 0;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-facebook, .right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-instagram, .right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-linkedin {
-  color: black;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-facebook {
-  color: #4267B2;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-instagram {
-  color: #E1306C;
-}
-.right-side-contact .col-md-12 .form-wrapper .content .social-links li .bi-linkedin {
-  color: #0077b5;
 }
 
 @media screen and (max-width: 1200px) {
