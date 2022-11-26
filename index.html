@@ -11,9 +11,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,7 +33,7 @@
 
 <body onload="changeText()">
     <!-- background front image -->
-    <div class="-top-container">
+    <div id="top-container">
         <div class="background-image-wrapper" data-aos="zoom-out" data-aos-duration=1500>
 
             <!-- logo nad navbar -->
@@ -40,11 +47,11 @@
                     <ul class="nav-bar-custom" id="nav-bar-custom">
                         <li class="responsive-nav-toggle" id="responsive-nav-toggle"><a href="#"
                                 onclick="toggleMenu()">&#9776;</a></li>
-                        <li class="hide-on-responsive"><a href="#">Home</a></li>
+                        <li class="hide-on-responsive"><a href="index.html">Home</a></li>
                         <li class="hide-on-responsive"><a href="#main">About</a></li>
                         <li class="hide-on-responsive"><a href="#service-header">Services</a></li>
                         <li class="hide-on-responsive"><a href="#portfolio-header">Work</a></li>
-                        <li class="hide-on-responsive"><a href="#">Contact</a></li>
+                        <li class="hide-on-responsive"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -293,11 +300,11 @@
                         <div class="portfolio-box">
 
                             <div class="portfolio-icon">
-                                
+
                             </div>
 
                             <div class="portfolio-text">
-                                <h4>Interior Design website</h4> 
+                                <h4>Interior Design website</h4>
                             </div>
 
                         </div>
@@ -307,16 +314,78 @@
                         <div class="portfolio-box">
 
                             <div class="portfolio-icon-2">
-                                
+
                             </div>
 
                             <div class="portfolio-text">
-                                <h4>Portfolio website</h4> 
+                                <h4>Portfolio website</h4>
                             </div>
 
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            <!-- contact form -->
+            <div class="row contact-form-wrapper">
+                <div class="col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="com-sm-12 col-md-6 left-side-contact" id="contact">
+                                <div class="col-sm-12">
+                                    <div class="heading-wrapper">
+                                        <h3>Send me a message</h3>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <form class="form-flex col-sm-12">
+                                            <input type="text" placeholder="Your Name">
+                                            <input type="email" placeholder="Your Email">
+                                            <input type="text" placeholder="Subject">
+                                            <textarea placeholder="Your Message"></textarea>
+                                            <input type="submit" value="Send Message" class="submit-button">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 right-side-contact">
+                                <div class="col-md-12">
+                                    <div class="heading-wrapper">
+                                        <h3>Get in touch</h3>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <div class="content">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem expedita
+                                                illo
+                                                minus. Fugiat at aliquid repudiandae animi, dolore reiciendis neque
+                                                quisquam
+                                                consequuntur doloribus quae unde sapiente, adipisci laboriosam, laborum
+                                                asperiores.
+                                            </p>
+                                            <ul class="address-details">
+                                                <li><span><i class="bi bi-geo"></i> </span><span>India</span></li>
+                                                <li><span><i class="bi bi-phone"></i> </span><span>(+91)
+                                                        8171399249</span></li>
+                                                <li><span><i class="bi bi-envelope-at"></i>
+                                                    </span><span>prashantsingh041199@gmail.com</span></li>
+                                            </ul>
+                                            <ul class="social-links">
+                                                <li><a href="https://www.facebook.com/prashantsingh480">
+                                                        <h3><i class="bi bi-facebook"></i></h3>
+                                                    </a></li>
+                                                <li><a href="https://www.instagram.com/__.prashant._____/">
+                                                        <h3><i class="bi bi-instagram"></i></h3>
+                                                    </a></li>
+                                                <li><a href="https://www.linkedin.com/in/prashant-singh-3102171b5">
+                                                        <h3><i class="bi bi-linkedin"></i></h3>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

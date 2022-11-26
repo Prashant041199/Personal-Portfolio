@@ -17,6 +17,7 @@ body
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+
     .image-nav-wrapper
         display: flex
         max-width: 100%
@@ -84,6 +85,8 @@ body
         font-size: 2.5rem
         color: $light-text-color
 .main
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
     .row
         margin: 3% 0
         justify-content: space-around
@@ -101,14 +104,13 @@ body
                         .details-wrapper
                             p
                                 font-size: 16px
-                                font-family: Arial, Helvetica, sans-serif
                             .detail-title
-                                font-weight: 600
+                                font-weight: 400
                                 font-size: 17px
                                 color: $dark-text-color
                     .row
                         h5
-                            font-weight: 600
+                            font-weight: 400
                         .skills
                             margin-top: 1%
                             p
@@ -125,7 +127,7 @@ body
                 .right-side
                     h1
                         position: relative
-                        font-weight: 400
+                        font-weight: 300
                     h1::after
                         content: ''
                         width: 22%
@@ -141,6 +143,8 @@ body
     margin-top: 4%
     text-align: center
     position: relative
+    h1
+        font-weight: 300
     p::after
         content: ''
         width: 22%
@@ -175,8 +179,8 @@ body
             justify-content: center
             align-items: center
             text-align: center
-            width: 120px
-            height: 120px
+            width: 110px
+            height: 110px
             border-radius: 60px
             background-color: $dark-text-color
             .inner-circle
@@ -195,8 +199,10 @@ body
             box-shadow: 0 0 2px #89898999,0 0 5px #89898999
             transition: 0.5s
     .service-text
+        font-weight: 300
         text-align: center
-
+        h4
+            font-weight: 400
 
 .portfolio-box
     padding: 0.2rem
@@ -208,18 +214,102 @@ body
         background-image: url(Images/Interior-design.png)
         background-size: cover
         background-repeat: no-repeat
+        background-position: center
     .portfolio-text
         margin: 1rem 0 1rem 0
+        h4
+            font-weight: 300
     .portfolio-icon-2
         background-image: url(Images/portfolio.png)
 
-    
-    
-    
-    
-    
-    
-    
+// contact form
+
+.row.contact-form-wrapper
+    display: flex
+    justify-content: space-around
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(Images/background1.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    margin-bottom: 0
+    .col-sm-12
+        .container
+            box-shadow: 0 0 16px $btn-base-color,0 0 16px $btn-base-color
+            background-color: white
+            border: none
+            border-radius: 4px
+
+.left-side-contact,.right-side-contact
+    display: flex
+    .col-md-11
+        padding: 4%
+
+.heading-wrapper
+    margin: 4% 0
+    h3
+        position: relative
+        font-weight: 300
+        &::after
+            content: ''
+            width: 12%
+            height: 3px
+            border-radius: 2px
+            position: absolute
+            transform: translate(10%)
+            left: 0
+            bottom: 0
+            background-color: $btn-base-color
+
+.form-wrapper
+    margin: 1% 0 5%
+.form-flex
+    display: flex
+    flex-direction: column
+    input,textarea
+        font-weight: 300
+        border-radius: 3px
+        border: none
+        box-shadow: 0 0 2px #89898999,0 0 5px #89898999
+        margin: 2% 0
+        font-size: 1.2rem
+        padding: 0.5rem
+    .submit-button
+        padding: 12px 10px
+        border: none
+        background-color: $btn-base-color
+        border-radius: 25px
+        color: white
+        // font-size: 1rem 
+        width: 70%
+.right-side-contact
+    .col-md-12
+        .form-wrapper
+            .content
+                ul
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                .address-details
+                    li
+                        span
+                            margin-right: 10px
+                            font-size: 1.1rem
+                .social-links
+                    margin-top: 3%
+                    display: flex
+                    flex-direction: row
+                    li
+                        margin: 0 4% 0 0
+                        .bi-facebook,.bi-instagram,.bi-linkedin
+                            color: black
+                        .bi-facebook
+                            color: #4267B2
+                        .bi-instagram
+                            color: #E1306C
+                        .bi-linkedin
+                            color: #0077b5
+                
+
 // Responsive screens
 @media screen and (max-width:1200px)
     .left-side,.right-side

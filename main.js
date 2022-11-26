@@ -19,7 +19,7 @@ var textDiv= document.getElementById("typed-data");
 var textToDisplay = new Array("Developer", "Gamer", "Designer","Photographer");
 var counter=0;
 function changeText(){
-   textDiv.innerHTML=textToDisplay[counter];
+        textDiv.innerHTML=textToDisplay[counter];
 
    if(counter<textToDisplay.length-1){
     counter++;
